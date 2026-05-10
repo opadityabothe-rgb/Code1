@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+
+    <script>
+        function validateForm() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let gender = document.querySelector('input[name="gender"]:checked');
+            let dob = document.getElementById("dob").value;
+
+            if (name == "") {
+                alert("Enter Name");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Enter Email");
+                return false;
+            }
+
+            if (!gender) {
+                alert("Select Gender");
+                return false;
+            }
+
+            if (dob == "") {
+                alert("Enter Date of Birth");
+                return false;
+            }
+
+            alert("Form Submitted Successfully");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        Name:
+        <input type="text" id="name">
+        <br><br>
+
+        Email:
+        <input type="text" id="email">
+        <br><br>
+
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        Date of Birth:
+        <input type="date" id="dob">
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>

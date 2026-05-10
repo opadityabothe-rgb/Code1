@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>CSS Types Example</title> 
+ 
+     
+    <link rel="stylesheet" href="style.css"> 
+ 
+    <style> 
+        body{ 
+            font-family: Arial; 
+            background-color: #f2f2f2; 
+        } 
+ 
+        h2{ 
+            color: darkblue; 
+            text-align: center; 
+        } 
+ 
+        .form-box{ 
+            width: 350px; 
+            margin: auto; 
+            padding: 20px;```++ 
+             
+            border: 2px solid gray; 
+            background-color: white; 
+            border-radius: 10px; 
+        } 
+ 
+        label{ 
+            font-weight: bold; 
+        } 
+    </style> 
+ 
+</head> 
+<body> 
+ 
+<h2>Student Registration Form</h2> 
+ 
+<div class="form-box"> 
+<form> 
+ 
+    
+    <label>Name:</label> 
+    <input type="text" placeholder="Enter your name" 
+           style="width:100%; padding:8px; margin-bottom:10px;"><br> 
+ 
+    <label>Email:</label> 
+    <input type="email" placeholder="Enter your email" 
+           style="width:100%; padding:8px; margin-bottom:10px;"><br> 
+ 
+    <label>Password:</label> 
+    <input type="password" placeholder="Enter password" 
+           style="width:100%; padding:8px; margin-bottom:10px;"><br> 
+ 
+    <label>Gender:</label><br> 
+    <input type="radio" name="gender"> Male 
+    <input type="radio" name="gender"> Female <br><br> 
+ 
+    <label>Course:</label> 
+    <select style="width:100%; padding:8px; margin-bottom:10px;"> 
+         <option>BTech</option> 
+        <option>BCA</option> 
+        <option>BSc CS</option> 
+        
+    </select> 
+ 
+   
+    <button class="submit-btn">Register</button> 
+ 
+</form> 
+</div> 
+ 
+</body> 
+</html> 

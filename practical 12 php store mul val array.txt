@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PHP Array Example</title>
+</head>
+
+<body>
+
+    <h2>Array Storage and Display</h2>
+
+    <?php
+
+    $students = array(
+        "shubham",
+        "Rahul",
+        "rohit",
+        "Amit",
+        "kartik"
+    );
+
+    echo "<h3>Student Names:</h3>";
+
+    foreach ($students as $name) {
+
+        echo $name . "<br>";
+    }
+
+    echo "<br>Total Students: "
+         . count($students);
+
+    ?>
+
+</body>
+
+</html>

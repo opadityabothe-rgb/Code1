@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Web Page Design</title> 
+    <style> 
+        img { 
+            float: right; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <img src=  alt="Sample Image" width="300" height="450" > 
+    <h1>My Web Page</h1> 
+    <h2>Image on the Right side</h2> 
+    <h2>Hyperlink</h2> 
+    <a href="https://www.google.com" target="_blank">Visit Google</a> 
+    <h2>Table with Nested Table</h2> 
+    <table border="1" cellpadding="10"> 
+        <tr> 
+            <th>Student Name</th> 
+            <th>Details</th> 
+        </tr> 
+        <tr> 
+            <td>Farhan</td> 
+            <td> 
+                <table border="1" cellpadding="5"> 
+                    <tr> 
+                        <th>Course</th> 
+                        <th>Year</th> 
+                    </tr> 
+                    <tr> 
+                        <td>Computer Engineering</td> 
+                        <td>Second Year</td> 
+                    </tr> 
+                </table> 
+            </td> 
+        </tr> 
+    </table> 
+</body> 
+</html>

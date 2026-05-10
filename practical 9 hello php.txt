@@ -1,0 +1,11 @@
+<?php
+
+date_default_timezone_set("Asia/Kolkata");
+
+echo "<h1>Hello!</h1>";
+
+echo "<h3>Current Date and Time: "
+     . date("d-m-Y H:i:s")
+     . "</h3>";
+
+?>

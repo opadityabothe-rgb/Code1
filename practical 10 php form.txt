@@ -1,0 +1,51 @@
+```php id="g4m8kp"
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple PHP Form</title>
+</head>
+
+<body>
+
+    <h2>Enter Your Details</h2>
+
+    <form method="POST" action="">
+
+        Name:
+        <input type="text" name="name" required>
+        <br><br>
+
+        Email:
+        <input type="email" name="email" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+    <?php
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+
+        echo "<h3>Submitted Data:</h3>";
+
+        echo "Name: "
+             . htmlspecialchars($name)
+             . "<br>";
+
+        echo "Email: "
+             . htmlspecialchars($email);
+    }
+
+    ?>
+
+</body>
+
+</html>
+```

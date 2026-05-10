@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+        <title>Document</title> 
+</head> 
+<body> 
+<h1> Information Form</h1>
+    <form> 
+        <h3>Name: <input type="text" name="name" required><br></h3> 
+ 
+        <h3>Email: <input type="email" name="email" required><br></h3> 
+ 
+        <h3>Gender: <br></h3> 
+        <h3>Male<input type="radio" name="Gender" value="Male"><br></h3> 
+        <h3>Female<input type="radio" name="Gender" value="Female"><br></h3> 
+ 
+        <h3>Date of birth: <input type="date" name="dob"><br></h3> 
+ 
+        <h3>Submit <input type="submit" value="submit"></h3> 
+    </form> 
+</body> 
+</html> 

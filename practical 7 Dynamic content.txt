@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Content</title>
+</head>
+
+<body>
+
+    <h2>Dynamic Content Example</h2>
+
+    <div id="container" 
+         style="border:1px solid black; padding:20px; margin-bottom:10px;">
+
+        Welcome!
+
+    </div>
+
+    <button onclick="showMessage()">
+        Show Message
+    </button>
+
+    <button onclick="changeStyle()">
+        Change Style
+    </button>
+
+    <button onclick="addElement()">
+        Add Element
+    </button>
+
+    <script>
+
+        function showMessage() {
+
+            document.getElementById("container").innerHTML =
+                "Hello! Content Updated";
+
+        }
+
+        function changeStyle() {
+
+            let box = document.getElementById("container");
+
+            box.style.backgroundColor = "lightblue";
+            box.style.color = "black";
+
+        }
+
+        function addElement() {
+
+            let newPara = document.createElement("p");
+
+            newPara.innerHTML = "New paragraph added!";
+
+            document.getElementById("container")
+                    .appendChild(newPara);
+
+        }
+
+    </script>
+
+</body>
+
+</html>

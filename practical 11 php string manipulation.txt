@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String Manipulation</title>
+</head>
+
+<body>
+
+    <h2>String Manipulation Program</h2>
+
+    <form method="post">
+
+        Enter String:
+        <input type="text" name="inputString" required>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <?php
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $str = $_POST['inputString'];
+
+        echo "<h3>Results:</h3>";
+
+        echo "Length: " . strlen($str) . "<br>";
+
+        echo "Reverse: " . strrev($str) . "<br>";
+
+        echo "Uppercase: " . strtoupper($str) . "<br>";
+
+        echo "Lowercase: " . strtolower($str) . "<br>";
+
+        echo "Substring (first 5 chars): "
+             . substr($str, 0, 5) . "<br>";
+
+        echo "Word Count: "
+             . str_word_count($str) . "<br>";
+
+        echo "Replace 'a' with '@': "
+             . str_replace('a', '@', $str) . "<br>";
+    }
+
+    ?>
+
+</body>
+
+</html>
